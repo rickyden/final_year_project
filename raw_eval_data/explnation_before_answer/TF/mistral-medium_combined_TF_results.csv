@@ -1,0 +1,202 @@
+Global Question Number,Question,Correct Answer,LLM Answer,Explanation
+1,"In a database, normalization is a process used to minimize redundancy and dependency of data, which ultimately helps in maintaining data consistency. However, it does not have any role in improving the performance of query execution.",FALSE,TRUE,"Normalization doesn't directly improve query execution performance, it helps maintain data consistency."
+2,Merge sort can be implemented using O(1) auxiliary space.,TRUE,FALSE,Merge sort requires O(n) auxiliary space for an array of size n.
+3,Merge sort is preferred for arrays over linked lists.,FALSE,TRUE,"Merge sort is efficient on arrays due to their random access property, while linked lists have poor performance due to sequential access."
+4,Quick sort follows Divide-and-Conquer strategy.,TRUE,TRUE,Quick sort is a divide-and-conquer algorithm that divides the data into smaller subsets and recursively sorts them.
+5,Quick sort uses join operation rather than merge operation.,TRUE,FALSE,"Quick sort uses partitioning to divide the data, similar to a merge operation, not a join operation."
+6,"When dynamic programming is applied to a problem, it takes far less time as compared to other methods that dont take advantage of overlapping subproblems.",TRUE,TRUE,"Dynamic programming takes advantage of overlapping subproblems, which can indeed reduce the time complexity compared to other methods."
+7,A greedy algorithm can be used to solve all the dynamic programming problems.,FALSE,FALSE,"Greedy algorithms do not always solve dynamic programming problems, as they make locally optimal choices that may not lead to a globally optimal solution."
+8,The schema for the relationship set linking a weak entity set to its corresponding strong entity set is redundant.,TRUE,FALSE,"The schema for the relationship set linking a weak entity set to its corresponding strong entity set is not redundant, as it maintains referential integrity."
+9,SQL specifies a way of mentioning functional dependencies,FALSE,TRUE,SQL specifies a way to mention functional dependencies using the CREATE TABLE and ALTER TABLE statements with the PRIMARY KEY and FOREIGN KEY constraints.
+10,Most current database systems do not support constraints on materialized view,TRUE,FALSE,"Most current database systems support constraints on materialized views, although they may have limitations on the types of constraints that can be enforced."
+11,Armstrong's axioms allow us to generate all F+ for any given F,TRUE,TRUE,"Armstrong's axioms allow us to generate all functional dependencies implied by a given set of functional dependencies (F+), not just F itself."
+12,Functional dependencies are transitive,TRUE,TRUE,"Functional dependencies are transitive, meaning that if A -> B and B -> C, then A -> C."
+13,Hashing is the problem of finding an appropriate mapping of keys into addresses,TRUE,TRUE,"Hashing is the process of finding an appropriate mapping of keys to addresses, which serves as an efficient search method."
+14, good hash approach is to derive the hash value that is expected to be dependent of any patterns that might exist in the data,FALSE,TRUE,A good hash approach is to derive a hash value that is independent of any patterns that might exist in the data to minimize collisions.
+15,Collisions can be reduced by choosing a hash function randomly in a way that is independent of the keys that are actually to be stored,TRUE,FALSE,"Choosing a hash function randomly can help reduce collisions, but it does not guarantee independence from the keys being stored."
+16,State true or false: If I = read(Q) and J = write(Q) then the order of I and J does not matter.,FALSE,FALSE,The order of I and J (read and write operations) matters in concurrent programming to avoid race conditions and maintain data consistency.
+17,Binary search is always faster than linear search,FALSE,FALSE,"Binary search is faster than linear search when the data is sorted and the number of elements is large enough, but not always."
+18,An objective way to compare two algorithms is by comparing their execution time irrespective of the machines,FALSE,FALSE,"Comparing execution time alone is not an objective way to compare algorithms, as it depends on the machine and implementation."
+19,"When an array is passed to a function, the function receives a copy of the array (call by value)",FALSE,FALSE,"When an array is passed to a function, the function receives a pointer to the array, not a copy (pass by reference)."
+20,An O(log N) algorithm is slower than an O(N) algorithm,FALSE,TRUE,"An O(log N) algorithm is faster than an O(N) algorithm for large input sizes, as log N grows more slowly than N."
+21,Most appropriate data structure to print a list of elements in reverse order is Queue data structure,FALSE,FALSE,"To print a list of elements in reverse order, a stack or a queue can be used, but a queue is more efficient for this specific task."
+22,The parameter to a copy constructor must be passed by reference,TRUE,TRUE,The parameter to a copy constructor must be passed by reference or const reference to avoid infinite recursion and unnecessary copying.
+23,The largest value in a binary search tree is always stored at the rightmost node of the tree,TRUE,TRUE,"The largest value in a binary search tree is always stored at the rightmost node of the tree, assuming no deletions have occurred."
+24,"To delete a dynamically allocated tree, the best traversal method is post-order traversal",TRUE,TRUE,"To delete a dynamically allocated tree, the best traversal method is post-order traversal, as it deletes the leaf nodes first and then the internal nodes."
+25,Maximum number of nodes in a binary tree that has N levels is 2N,FALSE,FALSE,"The maximum number of nodes in a binary tree that has N levels is 2^N - 1, not 2N."
+26,"In a binary tree, every node has exactly two children",FALSE,FALSE,"In a binary tree, every node does not have exactly two children. A node can have 0, 1, or 2 children."
+27,"O(1), O(n), O(n log n), O(n^2) is the correct ascending order of time complexities (low to high time complexities)",TRUE,TRUE,"O(1), O(n), O(n log n), O(n^2) is indeed the correct ascending order of time complexities (low to high time complexities)."
+28,Let f(n) = 2n^2 + 5n + 12. Then f(n) is O(2^n).,TRUE,FALSE,"The time complexity f(n) = 2n^2 + 5n + 12 is not O(2^n), but rather O(n^2), as the highest order term dominates the growth rate."
+29,Queue and Stack are the linear data structures,TRUE,TRUE,"Queue and Stack are linear data structures, as they store elements in a linear order with specific insertion and removal operations."
+30,Average case running time of Bubble sort is O(n log n).,FALSE,FALSE,"The average case running time of Bubble sort is O(n^2), not O(n log n)."
+31,O(n^2) ? O(2^n/4) is true for any value of n.,FALSE,FALSE,"O(n^2) ? O(2^n/4) is false for any value of n > 4, as 2^n/4 grows faster than n^2 for large input sizes."
+32,The tightest bound time complexity of function T(N) = T(N/2) + 100 is O(N).,FALSE,FALSE,"The tightest bound time complexity of function T(N) = T(N/2) + 100 is O(N log N), not O(N)."
+33,Queue is the suitable data structure for the application that tracks the customer orders in an ice cream parlor.,TRUE,TRUE,"Queue is the suitable data structure for the application that tracks the customer orders in an ice cream parlor, as it follows the first-come-first-served principle."
+34,A complete binary tree with a height of h can have more nodes than a full binary tree with a height of h.,FALSE,TRUE,"A complete binary tree with a height of h can have more nodes than a full binary tree with a height of h, as a full binary tree may not be completely filled at all levels."
+35,O(1) is the worst-case time complexity of dequeue in a queue containing M elements implemented using an array.,TRUE,FALSE,"The worst-case time complexity of dequeue in a queue containing M elements implemented using an array is O(M), not O(1)."
+36,"If we have two algorithms A1 and A2, and A1 takes time O(N) while A2 is O(N^2), then A1 always runs faster than A2.",FALSE,FALSE,"If we have two algorithms A1 and A2, and A1 takes time O(N) while A2 is O(N^2), then A1 does not always run faster than A2 for small input sizes or specific implementations."
+37,The running time of inserting an item into an unsorted list is O(n).,FALSE,FALSE,"The running time of inserting an item into an unsorted list is O(1) if the insertion occurs at the beginning or end of the list, or O(n) if it occurs at an arbitrary position."
+38,"Suppose an array X is declared as int X[5]. The base address of the array is 100, and integers take up 4 bytes. Then, the address of X[2] is 110.",FALSE,FALSE,"The address of X[2] is 108, as each integer takes up 4 bytes, so the offset from the base address is 2 * 4."
+39,Stack follows First In First Out (FIFO) rule.,FALSE,FALSE,"Stack follows the Last In First Out (LIFO) rule, not First In First Out (FIFO)."
+40,"In a circular doubly linked list with 10 nodes, we will need to change 4 links if we want to delete a node other than the head node.",FALSE,FALSE,"In a circular doubly linked list with 10 nodes, we will need to change 2 links if we want to delete a node other than the head node, not 4."
+41,"When using a linked list to perform insertion sort, each time we remove an element from the input list and insert it into the correct position in the linked list. Assume that we have n numbers to be sorted. The time complexity for sorting these numbers using the insertion sort algorithm is O(n^2).",TRUE,TRUE,"The time complexity for sorting these numbers using the insertion sort algorithm is O(n^2), as each insertion requires O(n) comparisons and there are n insertions."
+42,The time complexity of adding 5 to each element of an array of N numbers is O(N).,TRUE,TRUE,"The time complexity of adding 5 to each element of an array of N numbers is O(N), as it requires N constant time operations."
+43,"Let us suppose that there is a variable declaration int x = 50, *ptr. Then, the statement *ptr = &x is a valid statement in main() function.",FALSE,TRUE,"The statement *ptr = &x is a valid statement in main() function, as it assigns the address of x to ptr."
+44,Minimum and maximum height of a binary heap with N keys will be ? log?N ?.,TRUE,FALSE,"The minimum and maximum height of a binary heap with N keys is log2(N) and log2(N) + 1, respectively, assuming a complete binary tree."
+45,"Inserting an element to the beginning of an array (that is, A[0] element) is more difficult than inserting an element to the beginning of a linked list.",TRUE,TRUE,"Inserting an element to the beginning of an array requires shifting all other elements, while inserting an element to the beginning of a linked list requires updating the head pointer."
+46,The largest value in a binary search tree is always stored at the root of the tree.,FALSE,FALSE,"The largest value in a binary search tree is not always stored at the root of the tree, as deletions may cause the tree to become unbalanced."
+47,Structured data types include operations performed on data types.,FALSE,FALSE,"Structured data types define the organization and representation of data, not the operations performed on data types."
+48,One disadvantage of the hash algorithm is inefficient memory usage.,TRUE,FALSE,"One disadvantage of the hash algorithm is the potential for collisions, which can lead to inefficient memory usage, but not necessarily inefficient memory usage itself."
+49,A program can always be terminated.,FALSE,TRUE,"A program can always be terminated, either gracefully or forcefully, depending on the situation."
+50,The complexities are ADDED for nested loops.,FALSE,FALSE,"The complexities of nested loops are multiplied, not added, to find the overall time complexity."
+51,"When an element needs to be removed from the stack, the pop operation is performed.",TRUE,TRUE,"When an element needs to be removed from the stack, the pop operation is performed, which removes the top element and updates the stack pointer."
+52,"In a preorder traversal, the root node is visited first.",TRUE,TRUE,"In a preorder traversal, the root node is visited first."
+53,All nodes in a list point to some other node.,FALSE,FALSE,All nodes in a list point to some other node.
+54,There is no head in circular node.,TRUE,FALSE,There is no head in circular node.
+55,A Stack is a data structure in which insertions and deletions are restricted to one end.,TRUE,TRUE,A Stack is a data structure in which insertions and deletions are restricted to one end.
+56,A Stack uses only one pointer.,FALSE,FALSE,A Stack uses only one pointer.
+57,The representation of queues in C is similar to that of stacks.,TRUE,FALSE,The representation of queues in C is similar to that of stacks.
+58,"In a queue, elements are both inserted and deleted from one end.",FALSE,FALSE,"In a queue, elements are both inserted and deleted from one end."
+59,The specially designated node is called the root.,TRUE,TRUE,The specially designated node is called the root.
+60,"In a tree diagram, a circle represents nodes.",TRUE,TRUE,"In a tree diagram, a circle represents nodes."
+61,"In a Binary Tree, a node may have a degree greater than 2.",FALSE,FALSE,"In a Binary Tree, a node may have a degree greater than 2."
+62,"In a Binary Search Tree, the left and right subtrees of a node are also binary search trees.",TRUE,TRUE,"In a Binary Search Tree, the left and right subtrees of a node are also binary search trees."
+63,AVL Trees are variations of Binary Search Trees.,TRUE,TRUE,AVL Trees are variations of Binary Search Trees.
+64,Searching is more efficient in Binary Search Trees than in AVL Trees.,FALSE,FALSE,Searching is more efficient in Binary Search Trees than in AVL Trees.
+65,A node of n children should have n values.,FALSE,FALSE,A node of n children should have n values.
+66,Searching is more efficient in B-trees than in Binary Search Trees.,TRUE,TRUE,Searching is more efficient in B-trees than in Binary Search Trees.
+67,A tree can represent many-to-many relationships.,FALSE,FALSE,A tree can represent many-to-many relationships.
+68,Acyclic graphs do not have cycles.,TRUE,TRUE,Acyclic graphs do not have cycles.
+69,Traversal in a graph is visiting each node at least once.,FALSE,TRUE,Traversal in a graph is visiting each node at least once.
+70,"In DFS, all the nodes adjacent to the current node are visited.",FALSE,FALSE,"In DFS, all the nodes adjacent to the current node are visited."
+71,"In the Shortest Path Problem, the distance of other nodes is recomputed when the current node is added to the tree.",TRUE,TRUE,"In the Shortest Path Problem, the distance of other nodes is recomputed when the current node is added to the tree."
+72,"In Dijkstra's Algorithm, a minimal spanning tree can be constructed considering any vertex as the initial vertex.",FALSE,TRUE,"In Dijkstra's Algorithm, a minimal spanning tree can be constructed considering any vertex as the initial vertex."
+73,Sorting is always performed on the elements stored in primary memory.,FALSE,FALSE,Sorting is always performed on the elements stored in primary memory.
+74,Minimal storage sorts are optimal for arrays having a large number of elements.,TRUE,FALSE,Minimal storage sorts are optimal for arrays having a large number of elements.
+75,The sort is performed according to the key value of each record.,TRUE,TRUE,The sort is performed according to the key value of each record.
+76,Bubble Sort is so named because it bubbles the smallest element to the middle of the array.,FALSE,FALSE,Bubble Sort is so named because it bubbles the smallest element to the middle of the array.
+77,"The Quick Sort Algorithm works by partitioning the array to be sorted, then recursively sorting each partition.",TRUE,TRUE,"The Quick Sort Algorithm works by partitioning the array to be sorted, then recursively sorting each partition."
+78,The Sequential Search method on sorted lists is faster than the indexed method.,FALSE,FALSE,The Sequential Search method on sorted lists is faster than the indexed method.
+79,The search technique which loads only a part of the database into main memory is known as external search.,TRUE,TRUE,The search technique which loads only a part of the database into main memory is known as external search.
+80,A Binary Search can only be applied to sorted records.,TRUE,TRUE,A Binary Search can only be applied to sorted records.
+81,"In Binary Search, when the key is less than the middle element in a sorted array, the higher limit is modified for the next iteration.",TRUE,TRUE,"In Binary Search, when the key is less than the middle element in a sorted array, the higher limit is modified for the next iteration."
+82,"In the Folding method, the key is squared to generate the hash value.",FALSE,FALSE,"In the Folding method, the key is squared to generate the hash value."
+83,Primary clustering occurs in the Double Hashing method.,FALSE,FALSE,Primary clustering occurs in the Double Hashing method.
+84,Data and information are essentially the same thing.,FALSE,FALSE,Data and information are essentially the same thing.
+85,Data processing can be as simple as organizing data to reveal patterns.,TRUE,TRUE,Data processing can be as simple as organizing data to reveal patterns.
+86,We are now said to be entering the knowledge age.,TRUE,TRUE,We are now said to be entering the knowledge age.
+87,"Information implies familiarity, awareness, and understanding knowledge as it applies to an environment.",FALSE,TRUE,"Information implies familiarity, awareness, and understanding knowledge as it applies to an environment."
+88,Data constitute the building blocks of information.,TRUE,TRUE,Data constitute the building blocks of information.
+89,Metadata present a more complete picture of the data in the database than the data itself.,TRUE,FALSE,Metadata present a more complete picture of the data in the database than the data itself.
+90,The only way to access the data in a database is through the DBMS.,TRUE,TRUE,The only way to access the data in a database is through the DBMS.
+91,Database programming languages receive all application requests and translate them into the complex operations required to fulfill those requests.,FALSE,TRUE,Database programming languages receive all application requests and translate them into the complex operations required to fulfill those requests.
+92,The DBMS reveals much of the databases internal complexity to the application programs and users.,FALSE,FALSE,The DBMS reveals much of the databases internal complexity to the application programs and users.
+93,One disadvantage of the DBMS is that it increases the risk of data security breaches.,FALSE,TRUE,One disadvantage of the DBMS is that it increases the risk of data security breaches.
+94,An operational database is sometimes referred to as an enterprise database.,FALSE,TRUE,An operational database is sometimes referred to as an enterprise database.
+95,A data warehouse can store data derived from many sources.,TRUE,TRUE,A data warehouse can store data derived from many sources.
+96,The same data might be simultaneously structured and unstructured depending on the intended processing.,TRUE,TRUE,The same data might be simultaneously structured and unstructured depending on the intended processing.
+97,Corporations use only structured data.,FALSE,FALSE,Corporations use only structured data.
+98,"Historically, a manual file system was composed of a system of file folders and filing cabinets.",TRUE,TRUE,"Historically, a manual file system was composed of a system of file folders and filing cabinets."
+99,"Initially, the files within a computer file system were similar to manual files.",TRUE,TRUE,"Initially, the files within a computer file system were similar to manual files."
+100,Structural dependence exists when it is possible to make changes in the file structure without affecting the application programs ability to access the data.,FALSE,FALSE,Structural dependence exists when it is possible to make changes in the file structure without affecting the application programs ability to access the data.
+101,A query language is a procedural language.,FALSE,FALSE,A query language is a procedural language.
+102,One disadvantage of a database system over previous data management approaches is increased costs.,TRUE,TRUE,One disadvantage of a database system over previous data management approaches is increased costs.
+103,One advantage of a database system over previous data management approaches is that the database system is considerably less complex.,FALSE,FALSE,"A database system is more complex than previous data management approaches as it provides features like data abstraction, security, and concurrent access."
+104,Properties of an object are stored as rows in a table.,FALSE,FALSE,"Properties of an object are stored as columns in a table, not rows. Each row represents an instance of the object."
+105,It is not possible to access data stored in a database using a program written in Visual Basic or COBOL.,FALSE,FALSE,"A database can be accessed using various programming languages, including Visual Basic and COBOL, through DBMS APIs or drivers."
+106,De Morgan's Law is used to simplify complex constraints.,TRUE,TRUE,De Morgan's Law is used to simplify complex logical expressions in Boolean algebra and can be applied to database constraints.
+107,DBMS stores data efficiently with little wasted space.,TRUE,TRUE,"DBMS stores data efficiently by organizing it in a structured format and minimizing redundancy, thus reducing wasted space."
+108,"If a table is in 1NF and does not have a composite key, then it is in 2NF.",TRUE,FALSE,"If a table is in 1NF and does not have a composite key, it may still not be in 2NF if it contains partial dependencies."
+109,A primary goal of a database system is to share data with multiple users.,TRUE,TRUE,Sharing data with multiple users while maintaining data integrity and security is a primary goal of a database system.
+110,Multiple constraints can be included in a single query.,TRUE,TRUE,"Multiple constraints can be included in a single query using AND, OR, and NOT operators or subqueries."
+111,Specifying an asterisk (*) for the association multiplicity on a class diagram indicates that the item is required.,FALSE,FALSE,"An asterisk (*) for association multiplicity indicates many instances, not that the item is required. A '1' should be used to denote required."
+112,Specifying a zero (0) for the lower bound for the association multiplicity on a class diagram indicates that the item is required.,FALSE,FALSE,"A zero (0) for the lower bound indicates that the item is optional, not required. A '1' should be used to denote required."
+113,SQL does not allow you to use the same table in a subquery as is being used in the outer query.,FALSE,FALSE,"SQL allows using the same table in a subquery as in the outer query, often with the use of aliases to differentiate between them."
+114,"If a table is in 3NF, it is also in 2NF.",TRUE,TRUE,"If a table is in 3NF, it is also in 2NF, as 3NF is a higher level of normalization that builds upon 2NF."
+115,The primary key does not necessarily have to be unique for a given table.,FALSE,FALSE,The primary key must be unique for a given table. Its purpose is to identify each record uniquely.
+116,A subquery uses the same syntax as a regular query.,TRUE,TRUE,A subquery uses similar syntax to a regular query but is nested inside another query or clause.
+117,Procedural code is often placed within forms and reports.,TRUE,TRUE,"Procedural code can be placed within forms, reports, or stored procedures in a database system."
+118,A View is a saved query.,TRUE,TRUE,"A View is a virtual table based on a query, saved for later reuse. It does not store data physically."
+119,"If you use a GROUP BY command, you cannot see the non-aggregated data in the same query.",TRUE,FALSE,"If a GROUP BY command is used, non-aggregated data can still be seen using aggregate functions or grouping-related functions."
+120,Including the DISTINCT operator in a query will always result in less than or equal to the number of records returned when the DISTINCT operator is not used.,TRUE,TRUE,"Including the DISTINCT operator may result in fewer records, but it will never be more than the original query without DISTINCT."
+121,A bad choice for a primary key for the university's student database is the student phone number.,TRUE,TRUE,A student phone number is not a good choice for a primary key because it may change or not be unique.
+122,The employee-manager association is an example of a reflexive relationship.,TRUE,FALSE,"The employee-manager association is an example of a hierarchical relationship, not a reflexive one. A reflexive relationship is when an entity is related to itself."
+123,"In procedural languages, the developer must specify the sequence of a set of commands.",TRUE,TRUE,"In procedural languages, the developer specifies the sequence of commands, contrasting with declarative languages like SQL."
+124,The sort order of SQL query results can be changed according to user requirements.,TRUE,TRUE,The sort order of SQL query results can be changed using the ORDER BY clause.
+125,"General-purpose programming languages, such as Java and C#, are still used in relational database application development despite the invention of SQL.",TRUE,TRUE,"General-purpose programming languages are still used for various tasks in database application development, supplementing SQL."
+126,There is no way to store procedural code persistently within the database.,FALSE,FALSE,Stored procedures or triggers in a database can store procedural code persistently within the database.
+127,"Unlike tables created using the INSERT INTO statement, the output obtained by views will always be up-to-date in response to changes in the underlying data.",TRUE,TRUE,Views are based on the underlying data and will always be up-to-date when querying.
+128,Data triggers can only be set to activate after a change occurs in a value in a row.,FALSE,TRUE,Data triggers can be set to activate before or after a change occurs in a value in a row.
+129,Views can be used exactly like tables in any retrieval query.,TRUE,TRUE,Views can be used like tables in retrieval queries but may have limitations when updating or deleting data.
+130,"When a class participates in a reflexive relationship, it should always use the same role on both ends of the association.",FALSE,FALSE,"When a class participates in a reflexive relationship, it may use different roles on both ends of the association."
+131,The primary key can never have the null value but may be duplicated if necessary.,FALSE,FALSE,"The primary key can never have a null value and must be unique, not duplicated."
+132,A class should never be linked back to itself as this creates endless loops in class diagrams.,FALSE,FALSE,"A class can be linked back to itself to model reflexive relationships, creating loops in class diagrams."
+133,The relations in a relational database should be designed to appeal to the end user since the user may use them directly without forms.,FALSE,FALSE,"Relations in a relational database should be designed based on data normalization rules, not primarily for end-user appeal."
+134,Normalization usually results in fewer tables in the database and therefore a simpler and better design.,FALSE,FALSE,"Normalization usually results in more tables, not fewer, as it breaks down larger tables into smaller, related ones."
+135,Including computed attributes in database tables is always a good idea as they save computation time.,FALSE,FALSE,Including computed attributes in database tables may lead to data redundancy and inconsistencies.
+136,"If a user wishes to print a category name next to each row of output of a SQL query depending on certain classification criteria, the CASE function can be used.",TRUE,TRUE,The CASE function in SQL can be used to print different category names based on certain criteria.
+137,"Overlapping subclasses in a class diagram result in the same object appearing in more than one subclass, and therefore should not be allowed.",FALSE,FALSE,Overlapping subclasses do not necessarily result in the same object appearing in more than one subclass. They represent shared attributes and behaviors among subclasses.
+138,"The UNION operation requires the operand tables to be union-compatible, while the INTERSECT command does not require them to have this property.",FALSE,FALSE,"Both UNION and INTERSECT operations require the operand tables to be union-compatible, having the same number and type of columns."
+139,A view cannot be used exactly like a table when there is a need to update the view.,TRUE,TRUE,"A view cannot be used exactly like a table when updating data, especially if it contains aggregate functions or is based on multiple tables."
+140,A row alias is a well-known mechanism to control the naming of rows in query results.,FALSE,FALSE,"Row aliases are used to rename rows in query results, but this concept does not exist in SQL."
+141,"In database technology, existing applications should always be re-coded in response to changes in storage structures and/or access techniques.",FALSE,FALSE,"In database technology, existing applications should be designed to be adaptable to changes in storage structures and access techniques, not necessarily re-coded."
+142,"Dependency information can never be accidentally lost in a table through deletion anomaly, even if the table is not in 2NF.",FALSE,FALSE,Dependency information can be lost in a table through deletion anomaly if the table is not in 2NF or higher.
+143,Columnar forms differ from tabular forms in the way they present the data to the user.,TRUE,TRUE,"Columnar forms present data in columns, while tabular forms present data in rows and columns."
+144,2NF does not necessarily require the table to have a simple primary key.,TRUE,TRUE,"2NF does not require a simple primary key, but it does require that all non-key attributes be fully functional dependent on the primary key."
+145,Class diagrams used in relational modeling are related to the object-oriented approach.,TRUE,FALSE,"Class diagrams used in relational modeling are not directly related to object-oriented approach, but they can be used to represent entities and relationships in a database."
+146,Report headers differ from page headers in the frequency and locations in which the headers will appear in the final report.,TRUE,TRUE,"Report headers contain information about the report, while page headers contain information repeated at the top of each page."
+147,PC holds the address of the data which is to be executed next.,TRUE,FALSE,"The Program Counter (PC) holds the address of the next instruction to be executed, not the data."
+148,Stack pointer is not a sequence of memory locations defined by the user.,FALSE,FALSE,"The stack pointer is a register that points to the top of the stack in memory, not a sequence of memory locations defined by the user."
+149,Control bus is a group of lines used for the purpose of data flow.,FALSE,FALSE,"The control bus is used for transferring control signals, not data, between the CPU and other components."
+150,A stack can be placed in a portion of a large memory.,TRUE,TRUE,"A stack can be placed in a portion of a large memory, but it is not necessarily limited to that."
+151,LIFO is a stack organization.,TRUE,TRUE,"Last-In, First-Out (LIFO) is indeed a stack organization, where the last item added is the first one removed."
+152,ROM is a volatile memory.,FALSE,FALSE,"Read-Only Memory (ROM) is a non-volatile memory, retaining data even when power is turned off."
+153,1011-1001-1001 = -0011.,FALSE,FALSE,The binary subtraction 1011-1001-1001 does not equal -0011. The result should be 0010 with a carry/borrow of 1.
+154,Grey value of (10110)? is 11101.,TRUE,FALSE,"Grey value conversion is not a simple inversion, the given grey value of (10110) is incorrect."
+155,EBCDIC was represented by 256 characters.,TRUE,TRUE,EBCDIC (Extended Binary Coded Decimal Interchange Code) is an 8-bit character encoding scheme capable of representing 256 characters.
+156,9s complement of 86 is 14.,FALSE,FALSE,"The 9s complement of a number is used in decimal arithmetic, the given complement of 86 is incorrect."
+157,Sum of product form of a logical expression is in canonical form. Each product term is called MINTERM.,TRUE,TRUE,"Sum of product form is a canonical form of a logical expression, where each product term is called a MINTERM."
+158,The basic circuit for storing information in a digital machine is called flip-flop.,TRUE,TRUE,A flip-flop is a basic circuit element used for storing one bit of binary information in a digital machine.
+159,Registers are digital circuits used for permanent storage and shifting of information.,FALSE,FALSE,Registers are temporary storage locations in a digital circuit used for holding and shifting data.
+160,"In shift register, the output of each flip-flop is not connected to the input of the adjacent flip-flop.",FALSE,FALSE,"In a shift register, the output of each flip-flop is connected to the input of the adjacent flip-flop forming a cascaded structure."
+161,There are only three types of shift registers.,FALSE,FALSE,"There are four types of shift registers: serial-in serial-out (SISO), serial-in parallel-out (SIPO), parallel-in serial-out (PISO), and parallel-in parallel-out (PIPO)."
+162,Fetch cycle is also a type of instruction cycle.,TRUE,TRUE,Fetch cycle is a type of instruction cycle in which the processor retrieves an instruction from memory.
+163,The register that holds address for the stack is called a stack pointer.,TRUE,TRUE,The register that holds the memory address of the top of the stack is called a stack pointer.
+164,The operation of insertion is called pop.,FALSE,FALSE,"The operation of insertion in a stack is called push, not pop."
+165,The operation of deletion is called push.,FALSE,FALSE,"The operation of deletion in a stack is called pop, not push."
+166,OPR stands for Opcode Register.,TRUE,FALSE,"OPR stands for Operand Register, not Opcode Register."
+167,PROM can be erasable.,FALSE,FALSE,PROM (Programmable Read-Only Memory) is a type of non-volatile memory that can be programmed only once.
+168,A website is an individual page.,FALSE,FALSE,"A website is a collection of interconnected web pages, not a single page."
+169,The satellite acts as a reflector.,TRUE,FALSE,"The satellite does not act as a reflector in satellite communication, it receives signals from the earth station and retransmits them to another earth station."
+170,"In white box testing, the code itself is tested, without considering the specifications.",TRUE,FALSE,"In white box testing, the internal structure and code of the program are tested against the specifications."
+171,A word always contains an even number only.,FALSE,FALSE,A word is a fixed-length unit of data that can contain an even or odd number of bits.
+172,Verification is the process of checking that all has been specified as the user actually wanted.,FALSE,TRUE,Verification is the process of checking that the product meets the specified requirements.
+173,A computer can store and recall any amount of information as long as desired by the user.,TRUE,FALSE,A computer's memory has a finite capacity and cannot store an unlimited amount of information.
+174,The memory is the brain of the computer.,FALSE,FALSE,"The memory is not the brain of the computer, it is the primary storage medium."
+175,Machine language is easy to modify.,FALSE,FALSE,Machine language is not easy to modify as it is written in binary code.
+176,Assembly language is easily understandable.,TRUE,FALSE,"Assembly language is not easily understandable by humans, it requires knowledge of the assembly language syntax and the underlying hardware architecture."
+177,100111 + 11011 = 1001010.,FALSE,FALSE,"The given binary addition result is incorrect, the correct result is 100110."
+178,10101 - 1110 = 00111.,TRUE,FALSE,"The given binary subtraction result is incorrect, the correct result is 01001."
+179,The decimal value of 110101.11 is 53.7510.,TRUE,FALSE,"The decimal equivalent of the given binary number is 53.625, not 53.7510."
+180,ASCII 7 is a type of ASCII.,TRUE,TRUE,ASCII 7 is a type of ASCII character code representing the bell character.
+181,EBCDIC is a 4-bit code used for the internal representation of characters.,FALSE,FALSE,"EBCDIC is an 8-bit character encoding scheme, not a 4-bit code."
+182,The flag register carry indicates whether the result contains an odd number or even number.,FALSE,TRUE,The carry flag in a flag register indicates whether an arithmetic operation resulted in a carry or borrow.
+183,"In flip-flop, the High is also called reset.",FALSE,FALSE,"In a flip-flop, the high state is also called the set state, not the reset state."
+184,Keyboard is an input device.,TRUE,TRUE,Keyboard is an input device used to enter data and commands into a computer.
+185,BASIC is a programming language.,TRUE,TRUE,BASIC (Beginner's All-purpose Symbolic Instruction Code) is a high-level programming language.
+186,The hard disk can be transferred from one place to another.,TRUE,TRUE,A hard disk is a non-volatile storage device that can be transferred from one computer to another.
+187,The capacity of a floppy disk is 1.44MB.,TRUE,TRUE,The capacity of a standard 3.5-inch floppy disk is 1.44MB.
+188,Ripple is a two-bit asynchronous binary counter.,TRUE,FALSE,Ripple is a type of asynchronous counter that can have any number of bits.
+189,Implicit addressing is also called inherent addressing.,TRUE,TRUE,"Implicit addressing is also called inherent addressing, where the address of the operand is embedded in the instruction itself."
+190,"In direct access file, addition and deletion of records is very complicated.",FALSE,FALSE,"In a direct access file, addition and deletion of records is relatively easy compared to sequential files."
+191,A key field is a unique field in a record used to identify one record from another.,TRUE,TRUE,A key field is a unique field in a record used to identify one record from another in a database.
+192,"In sequential file, updation is not easy.",TRUE,TRUE,"In a sequential file, updation is not easy as it requires reading the entire file and rewriting it with the updated record."
+193,The Master strobes the slave at the end of each clock cycle in Synchronous BUS.,TRUE,TRUE,"In a synchronous bus, the master controls the communication by sending clock signals to the slaves."
+194,The devices with variable speeds are usually connected using asynchronous BUS.,TRUE,TRUE,"Asynchronous bus is used for devices with variable speeds, where data transfer is controlled by start and stop bits."
+195,Asynchronous mode of transmission is suitable for systems with multiple peripheral devices.,TRUE,TRUE,Asynchronous mode of transmission is suitable for systems with multiple peripheral devices as it allows for simultaneous data transfer.
+196,The asynchronous BUS mode of transmission allows for a faster mode of data transfer.,FALSE,FALSE,Asynchronous bus mode of transmission does not necessarily allow for faster data transfer compared to synchronous mode.
+197,The Interface circuits generate the appropriate timing signals required by the BUS control scheme.,TRUE,TRUE,Interface circuits generate the appropriate timing signals required by the bus control scheme to ensure data integrity.
+198,"If the transistor gate is closed, then the ROM stores a value of 1.",FALSE,FALSE,"In a ROM, a closed transistor gate corresponds to a stored value of 0, not 1."
+199,To overcome the slow operating speeds of the secondary memory we make use of faster flash drives.,TRUE,TRUE,"To overcome the slow operating speeds of secondary memory, faster memory technologies such as flash drives can be used as cache memory."
+200,"In the memory hierarchy, as the speed of operation increases the memory size also increases.",FALSE,TRUE,"In the memory hierarchy, as the speed of operation increases, the memory size typically decreases."
+201,In direct mapping the presence of the block in memory is checked with the help of block field.,FALSE,TRUE,"In direct mapping, the presence of a block in memory is checked by comparing the block number with the contents of the corresponding cache set."
