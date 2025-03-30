@@ -1,0 +1,152 @@
+Question,Correct Answer,LLM_Answer,Cosine_Similarity,Token_Similarity,Combined_Similarity
+A three-digit decimal number requires _____ for representation in the conventional BCD format.,12 bits,12 bits,1.0000000000000002,1.0,1.0000000000000002
+The _____ algorithm is the simplest method where the pattern is slid over the text one character at a time.,Brute Force,Brute Force,1.0000000000000002,1.0,1.0000000000000002
+A column in a table is called _____ and a row in a table is called _____.,"Field, record",field|record,1.0000000000000002,1.0,1.0000000000000002
+The _____ locking protocol ensures serializability.,two-phase,two-phase,1.0000000000000002,1.0,1.0000000000000002
+_____ is used to make sure that the data entered in a field is within the criteria set by the user.,Validation rule,Validation Rule,1.0000000000000002,1.0,1.0000000000000002
+A graph can be implemented using two common methods: the adjacency _____ and the adjacency _____.,"matrix, list",matrix|list,1.0000000000000002,1.0,1.0000000000000002
+The _________ provides a set of operations that take one or more relations as input and return a relation as an output.,Relational algebra,relational algebra,1.0000000000000002,1.0,1.0000000000000002
+"If an optimal solution can be created for a problem by constructing optimal solutions for its subproblems, the problem possesses ____________ property.",Optimal substructure,optimal substructure,1.0000000000000002,1.0,1.0000000000000002
+"The _____ property is used to define a default value that is automatically entered in a field when you add a new record, at a time of data entry.",Default value,Default Value,1.0000000000000002,1.0,1.0000000000000002
+_______ produces the relation that has attributes of R1 and R2,Cartesian product,Cartesian product,1.0000000000000002,1.0,1.0000000000000002
+The _____ algorithm uses the bad character rule and the good suffix rule to improve the efficiency of pattern matching.,Boyer-Moore,Boyer-Moore,1.0000000000000002,1.0,1.0000000000000002
+Transaction management ensures ____________ and __________ properties.,Atomicity and Durability,atomicity|durability,1.0000000000000002,1.0,1.0000000000000002
+"In recursion, the condition for which the function will stop calling itself is ____________",Base case,base case,1.0000000000000002,1.0,1.0000000000000002
+"If a schedule is equivalent to a serial schedule, it is called as a _________.",Serializable schedule,serializable schedule,1.0000000000000002,1.0,1.0000000000000002
+________ allows only committed data to be read and further requires that no other transaction is allowed to update it between two reads of a data item by a transaction.,Repeatable read,repeatable read,1.0000000000000002,1.0,1.0000000000000002
+"If a problem can be broken into subproblems which are reused several times, the problem possesses ____________ property.",Overlapping subproblems,overlapping subproblems,1.0000000000000002,1.0,1.0000000000000002
+An _____ is the format we will assign for the introduction of values in a field.,Input mask,Input Mask,1.0000000000000002,1.0,1.0000000000000002
+"For weighted graphs, the adjacency _____ implementation can include weights in the matrix cells, with a special value (like 0 or infinity) indicating no direct connection between vertices.",matrix,matrix,1.0,1.0,1.0
+The time complexity for both BFS and DFS is O(V + E) when implemented using an adjacency _____ for a graph with V vertices and E edges.,list,list,1.0,1.0,1.0
+"In BFS, a _____ data structure is typically used to keep track of the nodes to visit next.",queue,queue,1.0,1.0,1.0
+"In the Boyer-Moore algorithm, the bad character rule shifts the pattern by aligning the last occurrence of a mismatched character in the pattern with its occurrence in the _____.",text,text,1.0,1.0,1.0
+"In DFS, a _____ data structure is typically used to remember the nodes to visit next.",stack,stack,1.0,1.0,1.0
+_____ First Search is a graph traversal method that explores all the neighbor nodes at the present depth prior to moving on to the nodes at the next depth level.,Breadth,Breadth,1.0,1.0,1.0
+An adjacency _____ is a 2D array where each cell [i][j] indicates whether there is an edge from vertex i to vertex j.,matrix,matrix,1.0,1.0,1.0
+_____ First Search is a graph traversal method that explores as far as possible along each branch before backtracking.,Depth,Depth,1.0,1.0,1.0
+"The space complexity of an adjacency matrix is O(V^2), whereas the space complexity of an adjacency list is O(V + E), where V is the number of vertices and E is the number of _____.",edges,edges,1.0,1.0,1.0
+"An adjacency _____ is a collection of lists or sets, where each list or set represents a vertex in the graph and contains the list of neighbors or connected vertices.",list,list,1.0,1.0,1.0
+"The Boyer-Moore algorithm performs best when the alphabet size is _____, as it reduces the chance of a match with the bad character rule.",large,large,1.0,1.0,1.0
+"_____ Sort is a stable, divide-and-conquer, comparison-based sorting algorithm, most implementations produce a stable sort, meaning that the implementation preserves the input order of equal elements in the sorted output.",Merge,Merge,1.0,1.0,1.0
+"_____ Sort is a comparison-based sorting technique based on the Binary Heap data structure, known for its ability to sort in O(n log n) time complexity.",Heap,Heap,1.0,1.0,1.0
+"In Quick Sort, the choice of the _____ can greatly affect the algorithm's performance.",pivot,pivot,1.0,1.0,1.0
+_____ Sort is a divide-and-conquer algorithm that works by selecting a pivot element from the array and partitioning the other elements into two sub-arrays according to whether they are less than or greater than the pivot.,Quick,Quick,1.0,1.0,1.0
+"In a stack, if a user tries to remove an element from an empty stack it is called _____.",Underflow,underflow,1.0,1.0,1.0
+A linear list of elements in which deletion can be done from one end (front) and insertion can take place only at the other end (rear) is known as _____.,Queue,queue,1.0,1.0,1.0
+"The time complexity of the Brute Force algorithm is generally O(nm), where n is the length of the text and m is the length of the _____.",pattern,pattern,1.0,1.0,1.0
+"In a Trie, a node that represents the end of a string or a word is often marked with a special _____ marker.",end-of-word,end-of-word,1.0,1.0,1.0
+The KMP algorithm improves the time complexity to O(n + m) by not re-comparing characters that are already known to _____.,match,match,1.0,1.0,1.0
+"In the Boyer-Moore algorithm, the good suffix rule shifts the pattern such that the best matching prefix aligns with the suffix in the _____ that has been matched so far.",text,text,1.0,1.0,1.0
+"I and J are _________ if they are operations by different transactions on the same data item, and at least one of them is a write operation.",Conflicting,conflicting,1.0,1.0,1.0
+A system is in a ______ state if there exists a set of transactions such that every transaction in the set is waiting for another transaction in the set.,Deadlock,deadlock,1.0,1.0,1.0
+Execution of translation in isolation preserves the _________ of a database.,Consistency,consistency,1.0,1.0,1.0
+A _________ consists of a sequence of query and/or update statements.,Transaction,transaction,1.0,1.0,1.0
+Drop Table cannot be used to drop a table referenced by a _________ constraint.,Foreign Key,foreign key,1.0,1.0,1.0
+Relational Algebra is a __________ query language that takes two relations as input and produces another relation as an output of the query.,Procedural,procedural,1.0,1.0,1.0
+"The _____ operation allows the combining of two relations by merging pairs of tuples, one from each relation, into a single tuple.",Join,join,1.0,1.0,1.0
+"When a deadlock is detected, some transaction will have to be rolled back to break the _____.",deadlock,deadlock,1.0,1.0,1.0
+_____ protocols ensure that the system will never enter into a deadlock state.,Deadlock prevention,deadlock-prevention,1.0,1.0,1.0
+_____ state occurs after the discovery that normal execution can no longer proceed.,Failed,failed,1.0,1.0,1.0
+"Once the DBMS informs the user that a transaction has been successfully completed, its effects should persist even if the system crashes before all its changes are reflected on disk known as _____.",durability,durability,1.0,1.0,1.0
+"Unlike regular Tries, _____ Tries store all the suffixes of a given string and are used in various string-searching algorithms.",suffix,suffix,1.0,1.0,1.0
+"To save space, a common variation of Trie is _____ Trie, which merges nodes with a single child.",compressed,compressed,1.0,1.0,1.0
+"Tries are commonly used in applications like auto-complete, spell checking, and IP routing, where quick retrieval of _____ is crucial.",strings,strings,1.0,1.0,1.0
+"In a Trie, nodes may have as many children as there are characters in the _____, making it different from a binary search tree.",alphabet,alphabet,1.0,1.0,1.0
+_____ form of access is used to add and remove nodes from a queue.,"FIFO, First In First Out",First-In-First-Out|FIFO,1.0,1.0,1.0
+The root node in a Trie represents an _____ string.,empty,empty,1.0,1.0,1.0
+"In a Trie, all the descendants of a node have a common _____.",prefix,prefix,1.0,1.0,1.0
+A Trie is a tree-like data structure that stores a dynamic set of strings. Each node in a Trie represents a single _____ of a string.,character,character,1.0,1.0,1.0
+New nodes are added to the _____ of the queue.,REAR,rear,1.0,1.0,1.0
+"NoSQL databases include ____, Document, Column, and Graph types.",Key-Value,Key-Value,1.0,1.0,1.0
+The _____ supported by SQL depend on the particular implementation.,Data Types,data types,1.0,1.0,1.0
+The _____ clause should follow the GROUP BY clause.,HAVING,HAVING,1.0,1.0,1.0
+_____ enables you to format your data in an attracting and informative layout for printing.,Report,Report,1.0,1.0,1.0
+"In dynamic programming, the technique of storing the previously calculated values is called ___________",Memoization,memoization,1.0,1.0,1.0
+_____ query is used to delete records from the table.,Delete ,Delete,1.0,1.0,1.0
+Database system has several schemas according to the level of _____.,Abstraction,abstraction,1.0,1.0,1.0
+_____ keyword is used to specify a condition.,WHERE,WHERE,1.0,1.0,1.0
+The _____ statement is used to insert or add a row of data into the table.,Insert,INSERT,1.0,1.0,1.0
+Linked list is considered as an example of ___________ type of memory allocation.,Dynamic,dynamic,1.0,1.0,1.0
+You can combine different query blocks into a single query expression with the _____ operator.,UNION,UNION,1.0,1.0,1.0
+A _____ extracts and arranges information from a table in a manner that you specify.,Query,Query,1.0,1.0,1.0
+_____ are useful for security of data.,Views,Views,1.0,1.0,1.0
+A _____ is a database object that creates a datasheet of selected fields and records from one or more tables.,Query,Query,1.0,1.0,1.0
+A _____ contains records and field.,Table,Table,1.0,1.0,1.0
+A text data type usually allows the field to contain up to _____ characters.,255,255,1.0,1.0,1.0
+DBMS is a general program designed to manage a _____.,database,database,1.0,1.0,1.0
+A query inside a query is called a _____ query.,Nested,nested,1.0,1.0,1.0
+A combination of two or more keys which can be used as a primary key is called a _____.,Composite key,composite key,1.0,1.0,1.0
+SQL stands for _____.,structured query language,Structured Query Language,1.0,1.0,1.0
+_____ is the processed value which we get after we get after processing by the computer.,Information,Information,1.0,1.0,1.0
+A _____ is a fixed field which uniquely identifies every record in a table.,Primary key,primary key,1.0,1.0,1.0
+_____ is the linking field between two values.,Foreign key,Foreign key,1.0,1.0,1.0
+_____ is the raw facts to generate information.,Data,Data,1.0,1.0,1.0
+A _____ arises when a non-key column is functionally dependent on another non-key column that in turn is functionally dependent on the primary key.,Transitive Dependency,transitive dependency,1.0,1.0,1.0
+The Third normal form resolves _____ dependencies.,Transitive,transitive,1.0,1.0,1.0
+_____ is based on the concept of normal forms.,Normalization,Normalization,1.0,1.0,1.0
+Normalization is the process of refining the design of relational tables to minimize data _____.,Redundancy,redundancy,1.0,1.0,1.0
+"A _____ is a database object used primarily to display records on screen, to make it easier to enter new records and to make changes to the existing records.",Form,Form,1.0,1.0,1.0
+"_____ can be used to create a table, index, or view.",Data Definition,Data Definition Language,0.7969758487293632,0.6666666666666666,0.7969758487293632
+The addressing mode which makes use of in-direction pointers is ______________________,Indirect addressing mode,indirect addressing,0.7833860448505962,0.6666666666666666,0.7833860448505962
+"The addressing mode, where you directly specify the operand value is ________________________________",Immediate,immediate addressing,0.7399636941245828,0.5,0.7399636941245828
+_____ is the initial state of a transaction.,Active state,active,0.7071067811865476,0.5,0.7071067811865476
+We can define a data type of field in _____ view.,Table design,Design,0.7071067811865476,0.5,0.7071067811865476
+The _____ View window is the place where you design reports from scratch or add your own touches to reports you create with the report wizard.,Report design,Design,0.6918229123734027,0.5,0.6918229123734027
+"A stack, if implemented using an array of size MAX_SIZE, stack gets full when TOP = ______.",TOP = MAX_SIZE V 1,MAX_SIZE - 1,0.6820525169063318,0.5,0.6820525169063318
+A view can be dropped using a _____ statement.,DROP,DROP VIEW,0.6820525169063318,0.5,0.6820525169063318
+"_____ are used to query data from two or more tables, based on a relationship between certain columns in these tables.",SQL Joins,Joins,0.6820525169063318,0.5,0.6820525169063318
+The _____ form is usually applied only for large relational data models.,Fifth Normal,Fifth,0.6820525169063318,0.5,0.6820525169063318
+The Heap Sort algorithm starts by building a _____ (max heap or min heap) and then repeatedly extracts the maximum or minimum element and rebuilds the heap.,heap,max heap,0.646676800165667,0.5,0.646676800165667
+_____ combines two tables based on their common columns.,Natural Join,JOIN,0.6208250611520181,0.5,0.6208250611520181
+"The addressing mode/s, which uses the PC instead of a general-purpose register is ____________________",Relative,PC-relative addressing,0.5594429340632155,0.3333333333333333,0.5594429340632155
+The drop table command is used to delete a table and _____ in the table.,All Rows,all data,0.544826556788582,0.3333333333333333,0.544826556788582
+You cannot enter duplicate values in a _____.,Primary field,primary key,0.5188650621883786,0.3333333333333333,0.5188650621883786
+"In Linked List implementation, a node carries information regarding ___________",Data and Link,data and link to the next node,0.5103906721792824,0.5,0.5103906721792824
+The _____ algorithm preprocesses the pattern to create an LPS (longest proper prefix which is also suffix) array to avoid unnecessary comparisons.,Knuth-Morris-Pratt (KMP),KMP,0.4741040794508093,0.25,0.4741040794508093
+"When a top-down approach of dynamic programming is applied to a problem, it usually _____________ the time complexity and __________ the space complexity","Decreases, increases",reduces|increases,0.46519563581826207,0.3333333333333333,0.46519563581826207
+"For select operation, the ________ appear in the subscript and the __________ argument appears in the parentheses after the sigma.","Predicates, relation",predicate|relation,0.43914616810671947,0.3333333333333333,0.43914616810671947
+Normal forms are table structures with _____.,Minimum Redundancy,minimal redundancy,0.41819088387250597,0.3333333333333333,0.41819088387250597
+"A _____ is an indirect functional dependency, one in which X->Z only by virtue of X->Y and Y->Z.",Transitive Dependencies,transitive dependency,0.41813658782753027,0.3333333333333333,0.41813658782753027
+An _____ cannot be nested inside a Left Join or Right Join.,Inner Join,OUTER JOIN,0.38542375655440697,0.3333333333333333,0.38542375655440697
+"Tries are particularly efficient for _____ operations, allowing for rapid re-traversal of shared key parts.",prefix-based search,prefix-matching,0.34076124680528186,0.25,0.34076124680528186
+"Normalization eliminates data maintenance anomalies, minimizes redundancy, and eliminates _____.",Data Inconsistency,data anomalies,0.3303682110747924,0.3333333333333333,0.3333333333333333
+"In the case of, Zero-address instruction method the operands are stored in ______________________",Push down stack,a stack,0.31676486710495017,0.3333333333333333,0.3333333333333333
+"The fifth normal form deals with join-dependencies, which is a generalization of the _____.",MVD (Multi-Valued Dependency),multivalued dependency,0.2813592457491698,0.2,0.2813592457491698
+_____ addressing mode is most suitable to change the normal sequence of execution of instructions.,Relative,branch,0.0,0.0,0.0
+The _______ operator takes the results of two queries and returns only rows that appear in both result sets.,Intersect,intersection,0.0,0.0,0.0
+The addition and subtraction operations can be combined into one common circuit by including ______ with each full-adder.,XOR,an exclusive-OR gate,0.0,0.0,0.0
+"_____ is a complex set of software programs that controls the organization, storage, management, retrieval of data in database.",DBMS,Database Management System,0.0,0.0,0.0
+______ is a special type of integrity constraint that relates two relations & maintains consistency across the relations.,Referential Integrity Constraints,foreign key,0.0,0.0,0.0
+_____ is an organized collection of related data in tabular form.,Database,Table,0.0,0.0,0.0
+A computer that employs a micro programmed control unit will have separated into _____________________ and _______________________.,Hardware and Software,control memory|control unit,0.0,0.0,0.0
+The control unit has a and____.,control memory and main memory,program counter,0.0,0.0,0.0
+The set of ________ in a precedence graph consists of all the transactions participating in the schedule.,Vertices,nodes,0.0,0.0,0.0
+"If a problem can be solved by combining optimal solutions to non-overlapping problems, the strategy is called _____________",Divide and conquer,dynamic programming,0.0,0.0,0.0
+"Course(course_id,sec_id,semester) Here the course_id,sec_id and semester are __________ and course is a _________","Schema, Instance",keys|entity,0.0,0.0,0.0
+A primary key cannot contain the _____ values.,Null,,0.0,0.0,0.0
+A _____ dependency occurs when in a relational table containing at least three columns.,Multivalued,transitive,0.0,0.0,0.0
+"Department (dept name, building, budget) and Employee (employee_id, name, dept name, salary) Here the dept_name attribute appears in both the relations. Here using common attributes in relation schema is one way of relating ___________ relations.",Tuple of distinct,two,0.0,0.0,0.0
+The Brute Force algorithm can be inefficient because it does not _____ any information from the text characters.,reuse,utilize,0.0,0.0,0.0
+"In a given relationship R, if an attribute A uniquely defines all other attributes, then the attribute A is a key attribute which is also known as the _____ key.",Candidate,primary,0.0,0.0,0.0
+If a relational schema is in _______ NF and A is a subset of R and B is also a subset of R then it is that A is a superkey is a trivial multi values dependency.,4,Fourth,0.0,0.0,0.0
+_____ provide a method for maintaining integrity in the data.,Foreign Keys,Constraints,0.0,0.0,0.0
+The term push and pop is related to _____.,Stacks,stack,0.0,0.0,0.0
+"Merge Sort is particularly known for its _____ performance on large lists or arrays, as its time complexity is always O(n log n).",predictable,consistent,0.0,0.0,0.0
+"Quick Sort is generally faster than other O(n log n) algorithms like Merge Sort and Heap Sort, especially for _____ datasets.",small to medium,smaller,0.0,0.0,0.0
+"One of the disadvantages of Merge Sort is that it requires additional _____, making it less memory efficient.",space,memory,0.0,0.0,0.0
+"Heap Sort can be preferred when the data is _____, meaning there are no constraints on the memory usage, and we require a guaranteed O(n log n) performance regardless of the input data.",large and external (or not in RAM),unbounded,0.0,0.0,0.0
+The _____ nature of Merge Sort makes it advantageous for sorting linked lists.,stable,recursive,0.0,0.0,0.0
+A subquery is always a single query block _____ that can contain other subqueries but cannot contain a UNION.,SELECT,nested,0.0,0.0,0.0
+Query that makes changes in a table is called _____ query.,Update,Action,0.0,0.0,0.0
+"Database __________ which is the logical design of the database, and the database _______ which is a snapshot of the data in the database at a given instant in time.","Attributes, Relation",schema|state,0.0,0.0,0.0
+_____ query is used to change a record in a table at a single operation.,Action ,Update,0.0,0.0,0.0
+_____ help us to retrieve and view only those records from the database tables that meet a specific condition or criteria set by us.,Query,Queries,0.0,0.0,0.0
+_____ field type automatically enters a number in a field which increases by one for every new record.,Auto number,AutoNumber,0.0,0.0,0.0
+Memo field can usually hold _____ characters.,65535,"65,536",0.0,0.0,0.0
+Database _____ are the units in which programs read or write information.,objects,blocks,0.0,0.0,0.0
+Transaction-processing systems usually allow multiple transactions to run concurrently (at the same time) known as _____.,concurrent execution of transactions,concurrency,0.0,0.0,0.0
+Users are responsible for ensuring transaction _____.,consistency,correctness,0.0,0.0,0.0
+A transaction is an execution of a user program and is seen by the DBMS as a _____ or list of actions.,series,sequence,0.0,0.0,0.0
+The number of edges from the root to the node is called __________ of the tree.,Depth,height,0.0,0.0,0.0
+The number of edges from the node to the deepest leaf is called _________ of the tree.,Height,depth,0.0,0.0,0.0
+"The time complexity of searching for a key in a Trie is O(m), where m is the length of the key, making it very efficient compared to other data structures like _____ or _____.","arrays, linked lists",hash tables|binary search trees,0.0,0.0,0.0
